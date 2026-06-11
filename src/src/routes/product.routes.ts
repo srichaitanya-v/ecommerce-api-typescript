@@ -1,11 +1,8 @@
 import { Router } from "express";
+import { getProducts } from "../controllers/product.controller";
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.json({
-    message: "Products API Working"
-  });
-});
+router.get("/", getProducts);
 
 export default router;
