@@ -1,9 +1,7 @@
+import { getAllProducts } from "../services/product.service";
+
 export const getProducts = (req: any, res: any) => {
-  res.json([
-    {
-      id: 1,
-      name: "iPhone 15",
-      price: 999
-    }
-  ]);
+  const products = getAllProducts();
+
+  res.json(products);
 };
