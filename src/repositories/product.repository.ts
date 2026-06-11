@@ -1,14 +1,18 @@
+import { Product } from "../models/product.model";
+
+const products: Product[] = [
+  {
+    id: 1,
+    name: "iPhone 15",
+    price: 999,
+  },
+  {
+    id: 2,
+    name: "Samsung S24",
+    price: 899,
+  },
+];
+
 export const fetchProducts = () => {
-  return [
-    {
-      id: 1,
-      name: "iPhone 15",
-      price: 999
-    },
-    {
-      id: 2,
-      name: "Samsung S24",
-      price: 899
-    }
-  ];
+  return products;
 };
